@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-10px);}
+  100% { opacity: 1; transform: translateY(0);}
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.4s ease forwards;
+}
+
+
+.skeleton-gradient {
+  background: linear-gradient(90deg, #efefef, #0e028a, #0c1c4f); /* Darker gradient colors - NO WHITE LAYER */
+  background-size: 100% 50%;
+  animation: shimmer-gradient 1.5s linear infinite; /* Animation name, duration, and timing */
+}
+
+@keyframes shimmer-gradient {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}
+
+.custom-message-list {
+  scrollbar-width: thin;
+  scrollbar-color: #333 #121212;
+}
+
+.custom-message-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-message-list::-webkit-scrollbar-track {
+  background: #121212;
+}
+
+.custom-message-list::-webkit-scrollbar-thumb {
+  background-color: #333;
+  border-radius: 3px;
+}
+
+.react-loading-skeleton{
+   --base-color : oklch(0.21 0.034 264.665) !important;
+}
+
+
+.theme-bg{
+  background-color: #251b32;
+}

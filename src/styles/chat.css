@@ -1,0 +1,77 @@
+.cs-message__content {
+    font-size: 0.875rem;
+}
+
+
+
+/* #ffffff (White)
+#f7f2f9 (Light Lavender)
+#ddcbed (Soft Purple)
+#251b32 (Dark Purple)
+#f0e9f7 (Pale Lilac)
+#eee6f6 (Light Lavender Gray)
+#f1ebfa (Very Light Purple)
+#f1eaf9 (Muted Pastel Lavender)
+#f6f3f9 (Soft Pinkish White)
+#f0eaf7 (Pale Mauve) */
+
+
+/* Fix chat bubble width and colors */
+.cs-message--outgoing .cs-message__content {
+    background-color: #9b40d0 !important;
+    color: rgb(255, 255, 255) !important;
+    max-width: 100% !important;
+    margin-left: auto;
+    border-radius: 18px !important;
+    border-bottom-right-radius: 4px !important;
+    padding: 8px 12px !important;
+}
+
+.cs-message--incoming .cs-message__content {
+    background-color: #ffffff !important;
+    color: #1d1b1b !important;
+    max-width: 100% !important;
+    margin-right: auto;
+    border-radius: 18px !important;
+    border-bottom-left-radius: 4px !important;
+    padding: 8px 12px !important;
+}
+
+.cs-message-input__content-editor {
+    background-color: white !important;
+    color: #000000 !important;
+  
+}
+
+.cs-message-input__content-editor-wrapper {
+    background-color: white !important;
+    border: 1px solid #161c47 !important;
+    border-radius: 20px !important;
+}
+
+.cs-message-input__content-editor[data-placeholder]:empty:before {
+    color: #424040 !important;
+    
+}
+
+.cs-button--send {
+    color: #ffffff !important;
+}
+
+/* Message list background */
+.cs-message-list {
+    background-color:#eee6f6!important;
+    padding: 1rem !important;
+}
+
+/* Remove padding from message list items */
+.cs-message-list__wrapper {
+    padding: 0 !important;
+}
+
+/* Add Inter font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
+body {
+    font-family: 'Inter', system-ui, sans-serif;
+}
